@@ -59,13 +59,8 @@ class MergeXMLDocs {
         dir.eachFileRecurse(FileType.FILES) { file ->
             Merger.addFileData(new XmlSlurper().parse(file))
         }
-        Merger.Process();
+        Merger.Process()
 
     }
 
 }
-
-
-
-
-
